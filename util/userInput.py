@@ -7,7 +7,7 @@ Date: 2022-01-25 08:59:31
 import getpass
 import requests
 import json
-url = r'http://infosmart.lenovo.com/public/comm/publics/login'
+url = r'http://***.com/public/comm/publics/login'
 def glogin():
     passd = True
     while passd:
