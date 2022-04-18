@@ -1,0 +1,25 @@
+INFO:root:2022-01-25 18:51:08
+INFO:root:['./picture/NBP1.png', 'NBP1.png']
+WARNING:apscheduler.scheduler:Execution of job "autoProgram (trigger: cron[minute='*', second='50,20'], next run at: 2022-01-25 18:51:20 CST)" skipped: maximum number of running instances reached (1)
+ERROR:root:{'title': 'Form1', 'backend': 'uia', 'process': 14204}
+Traceback (most recent call last):
+  File "pywinauto\application.py", line 258, in __resolve_control
+  File "pywinauto\timings.py", line 458, in wait_until_passes
+pywinauto.timings.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "autoFun\grabPicture.py", line 84, in autograb
+    app2.window(title ='Form1').child_window(auto_id="WbsMain", control_type="Pane").capture_as_image().save(gpictureDir)
+  File "pywinauto\application.py", line 379, in __getattribute__
+  File "pywinauto\application.py", line 261, in __resolve_control
+  File "pywinauto\timings.py", line 436, in wait_until_passes
+  File "pywinauto\application.py", line 203, in __get_ctrl
+  File "pywinauto\findwindows.py", line 87, in find_element
+pywinauto.findwindows.ElementNotFoundError: {'title': 'Form1', 'backend': 'uia', 'process': 14204}
+INFO:root:{'title': 'Form1', 'backend': 'uia', 'process': 14204}
+INFO:root:2022-01-25 18:51:36
+WARNING:apscheduler.scheduler:Execution of job "autoProgram (trigger: cron[minute='*', second='50,20'], next run at: 2022-01-25 18:51:50 CST)" skipped: maximum number of running instances reached (1)
+INFO:root:2022-01-25 18:51:59
+INFO:root:['./picture/NBWarRoom.png', 'NBWarRoom.png']
